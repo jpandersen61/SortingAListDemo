@@ -13,7 +13,10 @@ namespace SortingAListDemo
 
     class Program
     {
-        const ComparisonMethods method = ComparisonMethods.methNone;
+        //const ComparisonMethods method = ComparisonMethods.methNone;
+        const ComparisonMethods method = ComparisonMethods.methDelegate;
+        //const ComparisonMethods method = ComparisonMethods.methIComparable;
+        //const ComparisonMethods method = ComparisonMethods.methIComparer;
 
         //Implementing IComparer<Student>
         static int Compare(Student s1, Student s2)
@@ -25,6 +28,7 @@ namespace SortingAListDemo
             return result;
         }
 
+       
         static void Main(string[] args)
         {
             //Setting up stuff for IComparer method
